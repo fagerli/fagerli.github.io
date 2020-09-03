@@ -38,10 +38,15 @@
             <br />
             <p>Velg hvor kraftig du vil snurre, og trykk på Spin knappen.</p>
             <br />
-            <table cellpadding="0" cellspacing="0" border="0">
-            <tr>
-                <td>
-                    <div class="power_controls">
+            <canvas id="canvas" width="434" height="434">
+                <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+            </canvas>
+            <br />
+                        <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                        <br /><br />
+                        <!--&nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Om igjen</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)-->
+
+                        <div class="power_controls" style="display:none">
                         <br />
                         <br />
                         <table class="power" cellpadding="10" cellspacing="0">
@@ -58,19 +63,7 @@
                                 <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
                             </tr>
                         </table>
-                        <br />
-                        <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
-                        <br /><br />
-                        &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Om igjen</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
-                    </div>
-                </td>
-                <td width="438" height="582" class="the_wheel" align="center" valign="center">
-                    <canvas id="canvas" width="434" height="434">
-                        <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-                    </canvas>
-                </td>
-            </tr>
-        </table>
+                     </div>
         <script>
             // Create new wheel object specifying the parameters at creation time.
             let theWheel = new Winwheel({
@@ -181,10 +174,13 @@
             // -------------------------------------------------------
             function startSpin()
             {
+                
+                resetWheel();
                 // Ensure that spinning can't be clicked again while already running.
                 if (wheelSpinning == false) {
                     // Based on the power level selected adjust the number of spins for the wheel, the more times is has
                     // to rotate with the duration of the animation the quicker the wheel spins.
+                    console.log("wheelPower: "+wheelPower);
                     if (wheelPower == 1) {
                         theWheel.animation.spins = 3;
                     } else if (wheelPower == 2) {
@@ -236,8 +232,11 @@
                 } else {
                     alert("You have won " + indicatedSegment.text);
                 }*/
-                
+                wheelSpinning = false; 
+                powerSelected(2);
             }
+
+            powerSelected(2);
         </script>
     </body>
 </html>
