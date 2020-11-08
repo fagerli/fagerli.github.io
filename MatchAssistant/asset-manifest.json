@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/matchassistant/static/css/main.ee1477f8.chunk.css",
-    "main.js": "/matchassistant/static/js/main.082c6bf4.chunk.js",
-    "main.js.map": "/matchassistant/static/js/main.082c6bf4.chunk.js.map",
+    "main.css": "/matchassistant/static/css/main.fb01037b.chunk.css",
+    "main.js": "/matchassistant/static/js/main.14fc2639.chunk.js",
+    "main.js.map": "/matchassistant/static/js/main.14fc2639.chunk.js.map",
     "runtime~main.js": "/matchassistant/static/js/runtime~main.d82420a3.js",
     "runtime~main.js.map": "/matchassistant/static/js/runtime~main.d82420a3.js.map",
     "static/js/2.b937edb8.chunk.js": "/matchassistant/static/js/2.b937edb8.chunk.js",
     "static/js/2.b937edb8.chunk.js.map": "/matchassistant/static/js/2.b937edb8.chunk.js.map",
     "index.html": "/matchassistant/index.html",
-    "precache-manifest.2c4260a42ec2889f36a52db3523f4bb3.js": "/matchassistant/precache-manifest.2c4260a42ec2889f36a52db3523f4bb3.js",
+    "precache-manifest.08ab1da7d09a1321ff3c152d20535914.js": "/matchassistant/precache-manifest.08ab1da7d09a1321ff3c152d20535914.js",
     "service-worker.js": "/matchassistant/service-worker.js",
-    "static/css/main.ee1477f8.chunk.css.map": "/matchassistant/static/css/main.ee1477f8.chunk.css.map"
+    "static/css/main.fb01037b.chunk.css.map": "/matchassistant/static/css/main.fb01037b.chunk.css.map"
   }
 }
